@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CheckBox
+        android:id="@+id/bucket_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/bucket_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title of Bucket List Entry"
+        app:layout_constraintStart_toEndOf="@id/bucket_checkbox"
+        />
+
+    <TextView
+        android:id="@+id/bucket_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description of Bucket List Entry"
+        app:layout_constraintStart_toEndOf="@id/bucket_checkbox"
+        app:layout_constraintTop_toBottomOf="@id/bucket_title"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
